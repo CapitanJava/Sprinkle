@@ -1,0 +1,74 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "emailVerified",
+    "createdAt",
+    "lastLogin",
+    "id",
+    "email",
+    "enabled"
+  ],
+  "properties": {
+    "emailVerified": {
+      "$id": "#/properties/emailVerified",
+      "type": "boolean",
+      "title": "The Emailverified Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "createdAt": {
+      "$id": "#/properties/createdAt",
+      "type": "string",
+      "title": "The Createdat Schema",
+      "default": "",
+      "examples": [
+        "2019-06-18T14:06:42+00:00"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "lastLogin": {
+      "$id": "#/properties/lastLogin",
+      "type": "string",
+      "title": "The Lastlogin Schema",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    },
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "default": 0,
+      "examples": [
+        26
+      ]
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The Email Schema",
+      "default": "",
+      "examples": [
+        "sprinkle.automation.qa@gmail.com"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "enabled": {
+      "$id": "#/properties/enabled",
+      "type": "boolean",
+      "title": "The Enabled Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  }
+}
