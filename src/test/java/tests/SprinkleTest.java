@@ -1,13 +1,16 @@
-package testClasses;
+package tests;
 
 import network.RequestModel;
 import org.junit.Test;
+import sprinkle.test.task.actions.SprinkleTestTaskActions;
 
 import static constants.Constants.PASSWORD;
 import static constants.Constants.USERNAME;
 
 
-public class TestClass extends Base {
+public class SprinkleTest {
+
+    private SprinkleTestTaskActions taskActions = new SprinkleTestTaskActions();
 
     @Test
     public void assertJWTTokenUsername(){

@@ -1,4 +1,4 @@
-package sprinkleTestTaskActions;
+package sprinkle.test.task.actions;
 
 import network.RequestModel;
 import network.Utils;
